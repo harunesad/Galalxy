@@ -9,7 +9,7 @@ public class Spawn : MonoBehaviour
 
     float posx = 0;
     float posCamX = 57;
-    float posIncX = 204;
+    float posIncX = 258;
     void Start()
     {
         Instantiate(background, background.transform.position, background.transform.rotation);
