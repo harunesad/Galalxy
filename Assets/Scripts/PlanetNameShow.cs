@@ -33,7 +33,7 @@ public class PlanetNameShow : MonoBehaviour
         lastMousePos = Input.mousePosition;
         mousePos = Input.mousePosition - lastMousePos;
         lastMousePos = Input.mousePosition;
-        Debug.Log(mousePos);
+        //Debug.Log(mousePos);
     }
     public void TextClose()
     {
