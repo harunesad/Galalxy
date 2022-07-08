@@ -5,7 +5,7 @@ using UnityEngine;
 public class CamFollow : MonoBehaviour
 {
     GameObject target;
-    Vector3 offSet = new Vector3(0, 20, -35);
+    public Vector3 offSet = new Vector3(0, 20, -35);
     float followSpeed = 5;
     void Awake()
     {
