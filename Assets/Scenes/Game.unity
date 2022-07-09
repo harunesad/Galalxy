@@ -1816,11 +1816,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   meteorPrefab: {fileID: 3993287635473034445, guid: c3d431b7d576aad42b0405006aa78b87, type: 3}
-  planets:
-  - {fileID: 899083278}
-  - {fileID: 2094031713}
-  - {fileID: 657560608}
-  - {fileID: 925156172}
+  planetsTransform:
+  - {fileID: 899083282}
+  - {fileID: 2094031717}
+  - {fileID: 657560612}
+  - {fileID: 925156178}
+  meteorIndex: 0
 --- !u!1 &1442269139
 GameObject:
   m_ObjectHideFlags: 0

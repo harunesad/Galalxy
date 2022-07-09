@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class SpawnMeteor : MonoBehaviour
 {
+    public static SpawnMeteor instance;
     public GameObject meteorPrefab;
     GameObject galaxy;
-    public List<GameObject> planets;
+    public List<Transform> planetsTransform;
     GameObject meteorObject;
+    //public Rigidbody meteorRb;
 
     float meteorPosX, meteorPosY, meteorPosZ;
+    public int meteorIndex;
+    //Vector3 distanceToPlanets;
     private void Awake()
     {
         galaxy = GameObject.Find("Galaxy");
+        instance = this;   
     }
     void Start()
     {
@@ -20,13 +25,18 @@ public class SpawnMeteor : MonoBehaviour
     }
     void Update()
     {
-        if (meteorObject != null)
-        {
-            meteorObject.transform.position = Vector3.Lerp(meteorObject.transform.position, planets[Random.Range(0, 4)].transform.position, Time.deltaTime * 1);
-        }
+        //if (meteorObject != null)
+        //{
+        //    meteorIndex = Random.Range(0, 4);
+        //    distanceToPlanets = planets[meteorIndex].transform.position - meteorPrefab.transform.position;
+        //    meteorObject.transform.position = Vector3.Lerp(meteorObject.transform.position, planets[Random.Range(0, 4)].transform.position, Time.deltaTime * 1);
+        //    distanceToPlanets.Normalize();
+        //    meteorRb.AddForce(distanceToPlanets * 1);
+        //}
     }
     void SpawnMeteorObject()
     {
+        meteorIndex = Random.Range(0, 4);
         meteorPosX = Random.Range(-25, 26);
         meteorPosY = meteorPrefab.transform.position.y;
         meteorPosZ = meteorPrefab.transform.position.z;
@@ -35,16 +45,5 @@ public class SpawnMeteor : MonoBehaviour
         meteorObject = meteor;
 
         meteorObject.transform.parent = galaxy.transform;
-    }
-    void RandomPlanet(int options)
-    {
-        options = Random.Range(1, 5);
-        switch (options)
-        {
-            case 1:
-
-            default:
-                break;
-        }
     }
 }
