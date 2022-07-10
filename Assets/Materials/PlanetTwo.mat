@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PlanetThree
+  m_Name: PlanetTwo
   m_Shader: {fileID: -6465566751694194690, guid: 29f8fce26d2db994e90e63c500ce83d7, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -74,7 +74,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Planet:
-        m_Texture: {fileID: 2800000, guid: 15b24bea4991a5a4086f04ce4a19cef2, type: 3}
+        m_Texture: {fileID: 2800000, guid: 9107a5ef0db59684b84919634de1dc00, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_871111ed4b874f0ca127963b3dbb6a62_Texture_1:
