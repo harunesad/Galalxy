@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Destroy : MonoBehaviour
 {
+    public ParticleSystem smoke;
     void Start()
     {
         
@@ -15,5 +16,7 @@ public class Destroy : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         Destroy(collision.gameObject);
+        smoke.transform.position = gameObject.transform.position + new Vector3(0, 1.5f, 0);
+        smoke.Play();
     }
 }
