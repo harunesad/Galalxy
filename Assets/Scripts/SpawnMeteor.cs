@@ -29,10 +29,11 @@ public class SpawnMeteor : MonoBehaviour
         {
             //meteorIndex = Random.Range(0, 4);
             //distanceToPlanets = planets[meteorIndex].transform.position - meteorPrefab.transform.position;
-            meteorObject.transform.position = Vector3.Lerp(meteorObject.transform.position, planetsTransform[Random.Range(0, 4)].position, Time.deltaTime * 5f);
+            meteorObject.transform.position = Vector3.Lerp(meteorObject.transform.position, planetsTransform[meteorIndex].position, Time.deltaTime * 5f);
             //distanceToPlanets.Normalize();
             //meteorRb.AddForce(distanceToPlanets * 1);
         }
+        Debug.Log(meteorIndex);
     }
     void SpawnMeteorObject()
     {
