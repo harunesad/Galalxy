@@ -25,14 +25,14 @@ public class SpawnMeteor : MonoBehaviour
     }
     void Update()
     {
-        //if (meteorObject != null)
-        //{
-        //    meteorIndex = Random.Range(0, 4);
-        //    distanceToPlanets = planets[meteorIndex].transform.position - meteorPrefab.transform.position;
-        //    meteorObject.transform.position = Vector3.Lerp(meteorObject.transform.position, planets[Random.Range(0, 4)].transform.position, Time.deltaTime * 1);
-        //    distanceToPlanets.Normalize();
-        //    meteorRb.AddForce(distanceToPlanets * 1);
-        //}
+        if (meteorObject != null)
+        {
+            //meteorIndex = Random.Range(0, 4);
+            //distanceToPlanets = planets[meteorIndex].transform.position - meteorPrefab.transform.position;
+            meteorObject.transform.position = Vector3.Lerp(meteorObject.transform.position, planetsTransform[Random.Range(0, 4)].position, Time.deltaTime * 5f);
+            //distanceToPlanets.Normalize();
+            //meteorRb.AddForce(distanceToPlanets * 1);
+        }
     }
     void SpawnMeteorObject()
     {

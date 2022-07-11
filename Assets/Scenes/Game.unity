@@ -645,6 +645,7 @@ GameObject:
   - component: {fileID: 657560610}
   - component: {fileID: 657560609}
   - component: {fileID: 657560613}
+  - component: {fileID: 657560614}
   m_Layer: 0
   m_Name: PlanetThree
   m_TagString: Untagged
@@ -746,6 +747,18 @@ MonoBehaviour:
   speedRadius: 15
   target: {fileID: 611893799}
   rotateSpeed: 9
+--- !u!114 &657560614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 657560608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ee3480fd1a547b40a5852213f44eb4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -934,6 +947,7 @@ GameObject:
   - component: {fileID: 899083280}
   - component: {fileID: 899083279}
   - component: {fileID: 899083283}
+  - component: {fileID: 899083284}
   m_Layer: 0
   m_Name: PlanetOne
   m_TagString: Untagged
@@ -1035,6 +1049,18 @@ MonoBehaviour:
   speedRadius: 10
   target: {fileID: 611893799}
   rotateSpeed: 8
+--- !u!114 &899083284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 899083278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ee3480fd1a547b40a5852213f44eb4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &925156172
 GameObject:
   m_ObjectHideFlags: 0
@@ -1048,6 +1074,7 @@ GameObject:
   - component: {fileID: 925156176}
   - component: {fileID: 925156175}
   - component: {fileID: 925156174}
+  - component: {fileID: 925156179}
   m_Layer: 0
   m_Name: PlanetFour
   m_TagString: Untagged
@@ -1149,6 +1176,18 @@ Transform:
   m_Father: {fileID: 1442269140}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &925156179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 925156172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ee3480fd1a547b40a5852213f44eb4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -2395,6 +2434,7 @@ GameObject:
   - component: {fileID: 2094031715}
   - component: {fileID: 2094031714}
   - component: {fileID: 2094031718}
+  - component: {fileID: 2094031719}
   m_Layer: 0
   m_Name: PlanetTwo
   m_TagString: Untagged
@@ -2496,6 +2536,18 @@ MonoBehaviour:
   speedRadius: 12
   target: {fileID: 611893799}
   rotateSpeed: 10
+--- !u!114 &2094031719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2094031713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ee3480fd1a547b40a5852213f44eb4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2106889152
 GameObject:
   m_ObjectHideFlags: 0

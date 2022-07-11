@@ -17,10 +17,10 @@ public class MeteorMove : MonoBehaviour
     }
     void Update()
     {
-        meteorIndex = Random.Range(0, 4);
-        Debug.Log(SpawnMeteor.instance.meteorIndex);
+        //meteorIndex = Random.Range(0, 4);
+        Debug.Log(distanceToPlanets);
         distanceToPlanets = SpawnMeteor.instance.planetsTransform[SpawnMeteor.instance.meteorIndex].position - transform.position;
         distanceToPlanets.Normalize();
-        meteorRb.AddForce(distanceToPlanets * 1);
+        meteorRb.AddForce(distanceToPlanets * 0.1f);
     }
 }
