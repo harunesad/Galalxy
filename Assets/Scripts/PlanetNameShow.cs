@@ -7,11 +7,6 @@ public class PlanetNameShow : MonoBehaviour
 {
     public TMP_Text planetName;
     public Button closeText;
-    Vector3 mousePos, lastMousePos;
-    void Start()
-    {
-        
-    }
     void Update()
     {
         RaycastHit hit;
@@ -29,11 +24,6 @@ public class PlanetNameShow : MonoBehaviour
                 }
             }
         }
-        //mousePos = ray.direction;
-        lastMousePos = Input.mousePosition;
-        mousePos = Input.mousePosition - lastMousePos;
-        lastMousePos = Input.mousePosition;
-        //Debug.Log(mousePos);
     }
     public void TextClose()
     {

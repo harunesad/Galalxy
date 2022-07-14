@@ -9,11 +9,9 @@ public class SpawnMeteor : MonoBehaviour
     GameObject galaxy;
     public List<Transform> planetsTransform;
     GameObject meteorObject;
-    //public Rigidbody meteorRb;
 
     float meteorPosX, meteorPosY, meteorPosZ;
     public int meteorIndex;
-    //Vector3 distanceToPlanets;
     private void Awake()
     {
         galaxy = GameObject.Find("Galaxy");
@@ -27,13 +25,8 @@ public class SpawnMeteor : MonoBehaviour
     {
         if (meteorObject != null)
         {
-            //meteorIndex = Random.Range(0, 4);
-            //distanceToPlanets = planets[meteorIndex].transform.position - meteorPrefab.transform.position;
-            meteorObject.transform.position = Vector3.Lerp(meteorObject.transform.position, planetsTransform[meteorIndex].position, Time.deltaTime * 5f);
-            //distanceToPlanets.Normalize();
-            //meteorRb.AddForce(distanceToPlanets * 1);
+            meteorObject.transform.position = Vector3.Lerp(meteorObject.transform.position, planetsTransform[meteorIndex].position, Time.deltaTime * 10f);
         }
-        Debug.Log(meteorIndex);
     }
     void SpawnMeteorObject()
     {

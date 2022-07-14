@@ -13,15 +13,9 @@ public class CamRotate : MonoBehaviour
     {
         sun = GameObject.Find("Sun");
     }
-    void Start()
-    {
-        
-    }
     void Update()
     {
-        //transform.RotateAround(sun.transform.position, Vector3.up, Time.deltaTime * rotateCamSpeed);
         Invoke("System", 3);
-        //System();
     }
     public void System()
     {

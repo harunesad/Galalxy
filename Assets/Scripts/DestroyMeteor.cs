@@ -8,11 +8,7 @@ public class DestroyMeteor : MonoBehaviour
     {
         if (gameObject != null)
         {
-            Destroy(gameObject, 2);
+            Destroy(gameObject, 1.5f);
         }
-    }
-    void Update()
-    {
-
     }
 }

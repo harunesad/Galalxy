@@ -14,10 +14,6 @@ public class CircleDraw : MonoBehaviour
         circleRenderer.useWorldSpace = false;
         CreatePoints();
     }
-    void Update()
-    {
-        
-    }
     void CreatePoints()
     {
         float x;
