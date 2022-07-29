@@ -5,7 +5,7 @@ using UnityEngine;
 public class CamRotate : MonoBehaviour
 {
     GameObject sun;
-    public float rotateCamSpeed;
+    [SerializeField] Galaxy galaxy;
 
     private float lastFrameFingerPositionX;
     private float moveFactorX;
@@ -29,11 +29,11 @@ public class CamRotate : MonoBehaviour
             lastFrameFingerPositionX = Input.mousePosition.x;
             if (moveFactorX > 0)
             {
-                transform.RotateAround(sun.transform.localPosition, Vector3.up, Time.deltaTime * rotateCamSpeed);
+                transform.RotateAround(sun.transform.localPosition, Vector3.up, Time.deltaTime * galaxy.rotateCamSpeed);
             }
             if (moveFactorX < 0)
             {
-                transform.RotateAround(sun.transform.localPosition, Vector3.up, -Time.deltaTime * rotateCamSpeed);
+                transform.RotateAround(sun.transform.localPosition, Vector3.up, -Time.deltaTime * galaxy.rotateCamSpeed);
             }
         }
         else if (Input.GetMouseButtonUp(0))

@@ -11,6 +11,7 @@ public class SpawnMeteor : MonoBehaviour
     GameObject meteorObject;
 
     float meteorPosX, meteorPosY, meteorPosZ;
+    float repeatTime = 5;
     public int meteorIndex;
     private void Awake()
     {
@@ -19,7 +20,7 @@ public class SpawnMeteor : MonoBehaviour
     }
     void Start()
     {
-        InvokeRepeating("SpawnMeteorObject", 0, 5);
+        InvokeRepeating("SpawnMeteorObject", 0, repeatTime);
     }
     void Update()
     {

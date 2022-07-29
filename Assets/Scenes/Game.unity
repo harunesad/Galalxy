@@ -271,7 +271,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 482224, guid: b037048ffb73dc4419b4445789d3a04c, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 482224, guid: b037048ffb73dc4419b4445789d3a04c, type: 3}
       propertyPath: m_LocalScale.x
@@ -408,6 +408,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedRadius: 14
   target: {fileID: 925156172}
+  galaxy: {fileID: 11400000, guid: b5fbfb8df341a994c98af89c442bd783, type: 2}
   rotateSpeed: 10
 --- !u!135 &199797296
 SphereCollider:
@@ -518,7 +519,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   circleRenderer: {fileID: 254504118}
-  segments: 100
+  galaxy: {fileID: 11400000, guid: b5fbfb8df341a994c98af89c442bd783, type: 2}
   xradius: 25
   yradius: 25
 --- !u!120 &254504118
@@ -732,6 +733,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedRadius: 3
   target: {fileID: 611893799}
+  galaxy: {fileID: 11400000, guid: b5fbfb8df341a994c98af89c442bd783, type: 2}
   rotateSpeed: 0
 --- !u!1 &657560608
 GameObject:
@@ -847,6 +849,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedRadius: 15
   target: {fileID: 611893799}
+  galaxy: {fileID: 11400000, guid: b5fbfb8df341a994c98af89c442bd783, type: 2}
   rotateSpeed: 9
 --- !u!114 &657560614
 MonoBehaviour:
@@ -1150,6 +1153,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedRadius: 10
   target: {fileID: 611893799}
+  galaxy: {fileID: 11400000, guid: b5fbfb8df341a994c98af89c442bd783, type: 2}
   rotateSpeed: 8
 --- !u!114 &899083284
 MonoBehaviour:
@@ -1199,6 +1203,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedRadius: 9
   target: {fileID: 611893799}
+  galaxy: {fileID: 11400000, guid: b5fbfb8df341a994c98af89c442bd783, type: 2}
   rotateSpeed: 8
 --- !u!135 &925156175
 SphereCollider:
@@ -1423,7 +1428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd9fade8b9a099f4994a3d0a23474a80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateCamSpeed: 500
+  galaxy: {fileID: 11400000, guid: b5fbfb8df341a994c98af89c442bd783, type: 2}
 --- !u!198 &986195891 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 19856596, guid: b037048ffb73dc4419b4445789d3a04c, type: 3}
@@ -1547,7 +1552,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   circleRenderer: {fileID: 1144781998}
-  segments: 100
+  galaxy: {fileID: 11400000, guid: b5fbfb8df341a994c98af89c442bd783, type: 2}
   xradius: 20
   yradius: 20
 --- !u!120 &1144781998
@@ -1761,6 +1766,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedRadius: 9
   target: {fileID: 2094031713}
+  galaxy: {fileID: 11400000, guid: b5fbfb8df341a994c98af89c442bd783, type: 2}
   rotateSpeed: 6
 --- !u!1 &1227263636
 GameObject:
@@ -1808,7 +1814,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   circleRenderer: {fileID: 1227263639}
-  segments: 100
+  galaxy: {fileID: 11400000, guid: b5fbfb8df341a994c98af89c442bd783, type: 2}
   xradius: 15
   yradius: 15
 --- !u!120 &1227263639
@@ -2247,6 +2253,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedRadius: 7
   target: {fileID: 899083278}
+  galaxy: {fileID: 11400000, guid: b5fbfb8df341a994c98af89c442bd783, type: 2}
   rotateSpeed: 6
 --- !u!1 &1768767285
 GameObject:
@@ -2360,6 +2367,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedRadius: 12
   target: {fileID: 657560608}
+  galaxy: {fileID: 11400000, guid: b5fbfb8df341a994c98af89c442bd783, type: 2}
   rotateSpeed: 11
 --- !u!1 &1864465948
 GameObject:
@@ -2577,6 +2585,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedRadius: 12
   target: {fileID: 611893799}
+  galaxy: {fileID: 11400000, guid: b5fbfb8df341a994c98af89c442bd783, type: 2}
   rotateSpeed: 10
 --- !u!114 &2094031719
 MonoBehaviour:
@@ -2622,7 +2631,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   circleRenderer: {fileID: 2106889156}
-  segments: 100
+  galaxy: {fileID: 11400000, guid: b5fbfb8df341a994c98af89c442bd783, type: 2}
   xradius: 10
   yradius: 10
 --- !u!4 &2106889155

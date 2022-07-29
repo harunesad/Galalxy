@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class DestroyMeteor : MonoBehaviour
 {
+    float delay = 1.5f;
     void Start()
     {
         if (gameObject != null)
         {
-            Destroy(gameObject, 1.5f);
+            Destroy(gameObject, delay);
         }
     }
 }
